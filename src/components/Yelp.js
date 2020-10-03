@@ -10,6 +10,7 @@ const Yelp = {
       return response.json();
     }).then(jsonResponse => {
       if (jsonResponse.businesses) {
+        alert('this is a valid PR')
         return jsonResponse.businesses.map(business => ({
           id: business.id,
           imageSrc: business.image_url,
